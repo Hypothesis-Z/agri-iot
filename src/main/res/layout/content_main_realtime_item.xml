@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_update_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:text="@string/content_update_time"/>
+
+        <TextView
+            android:id="@+id/tv_update_time_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/content_null_demo"/>
+
+        <TextView
+            android:id="@+id/tv_parameter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/content_parameter"/>
+
+        <TextView
+            android:id="@+id/tv_parameter_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/content_null"/>
+
+    </LinearLayout>
+
+    <com.dashboard.trc.DashboardView
+        android:id="@+id/dashboardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:textColor="@color/colorPrimary"
+        app:arcColor="@color/colorPrimary"
+        app:sweepAngle="270"
+        app:startAngle="135"
+        app:stripeMode="inner"
+        app:bigSliceCount="10"
+        app:headerRadius="20dp"
+        app:radius="90dp"
+        />
+
+</LinearLayout>
