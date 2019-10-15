@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/content_main_setup"
@@ -97,4 +98,105 @@
 
         </RelativeLayout>
     </LinearLayout>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_main_setup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setup_row_height"
+            android:paddingLeft="@dimen/setup_row_padding_horizontal"
+            android:paddingRight="@dimen/setup_row_padding_horizontal"
+            android:layout_gravity="center"
+            android:background="@drawable/relative_layout_underline">
+            <TextView
+                android:id="@+id/choose_device_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_device"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/choose_device_spinner"
+                android:layout_toStartOf="@+id/choose_device_spinner"/>
+            <Spinner
+                android:id="@+id/choose_device_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:entries="@array/choose_device_spinner_values"
+                android:layout_centerVertical="true"
+                android:spinnerMode="dropdown">
+            </Spinner>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/setup_row_height"
+            android:paddingLeft="@dimen/setup_row_padding_horizontal"
+            android:paddingRight="@dimen/setup_row_padding_horizontal"
+            android:background="@drawable/relative_layout_underline"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <TextView
+                android:id="@+id/apikey_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apikey"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@id/apikey_value_editText"
+                android:layout_toStartOf="@id/apikey_value_editText"/>
+            <EditText
+                android:id="@+id/apikey_value_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apikey_value"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:background="@color/colorWhite"
+                android:inputType="text" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setup_row_height"
+            android:paddingLeft="@dimen/setup_row_padding_horizontal"
+            android:paddingRight="@dimen/setup_row_padding_horizontal"
+            android:layout_gravity="center"
+            android:background="@drawable/relative_layout_underline">
+            <TextView
+                android:id="@+id/refresh_interval_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/refresh_interval"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/refresh_interval_spinner"
+                android:layout_toStartOf="@id/refresh_interval_spinner"/>
+            <Spinner
+                android:id="@+id/refresh_interval_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:entries="@array/choose_refresh_interval_values"
+                android:spinnerMode="dropdown">
+            </Spinner>
+
+        </RelativeLayout>
+    </LinearLayout>
+>>>>>>> 6bad6c40faf49e654987212f313aa28451ae13ab
 </ScrollView>

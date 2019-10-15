@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -95,4 +96,103 @@
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@android:drawable/ic_dialog_email" />
 
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_notifications_none_black_24dp"
+                android:background="#00000000"
+                android:layout_gravity="end"
+                android:paddingTop="@dimen/toolbar_icon_padding_vertical"
+                android:paddingBottom="@dimen/toolbar_icon_padding_vertical"
+                android:paddingLeft="@dimen/toolbar_icon_padding_horizontal"
+                android:paddingRight="@dimen/toolbar_icon_padding_horizontal"
+                />
+            <ImageButton
+                android:id="@+id/ifOnline"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_cloud_queue_black_24dp"
+                android:background="#00000000"
+                android:layout_gravity="end"
+                android:paddingTop="@dimen/toolbar_icon_padding_vertical"
+                android:paddingLeft="@dimen/toolbar_icon_padding_horizontal"
+                android:paddingRight="@dimen/toolbar_icon_padding_horizontal"
+                android:paddingBottom="@dimen/toolbar_icon_padding_vertical"
+                android:visibility="gone"/>
+            <ImageButton
+                android:id="@+id/refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_refresh_black_24dp"
+                android:background="#00000000"
+                android:layout_gravity="end"
+                android:paddingTop="@dimen/toolbar_icon_padding_vertical"
+                android:paddingLeft="@dimen/toolbar_icon_padding_horizontal"
+                android:paddingRight="@dimen/toolbar_icon_padding_horizontal"
+                android:paddingBottom="@dimen/toolbar_icon_padding_vertical"
+                android:visibility="gone"/>
+            <ImageButton
+                android:id="@+id/download"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_file_download_black_24dp"
+                android:background="#00000000"
+                android:layout_gravity="end"
+                android:paddingTop="@dimen/toolbar_icon_padding_vertical"
+                android:paddingLeft="@dimen/toolbar_icon_padding_horizontal"
+                android:paddingRight="@dimen/toolbar_icon_padding_horizontal"
+                android:paddingBottom="@dimen/toolbar_icon_padding_vertical"
+                android:visibility="gone"/>
+
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/main_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+>>>>>>> 6bad6c40faf49e654987212f313aa28451ae13ab
 </android.support.design.widget.CoordinatorLayout>

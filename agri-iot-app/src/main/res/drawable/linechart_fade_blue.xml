@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
     <gradient
@@ -7,3 +8,14 @@
         android:type="linear" />
 </shape>
 
+=======
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="270"
+        android:endColor="#7f2474d1"
+        android:startColor="@color/colorPrimary"
+        android:type="linear" />
+</shape>
+
+>>>>>>> 6bad6c40faf49e654987212f313aa28451ae13ab

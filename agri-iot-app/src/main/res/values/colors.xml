@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#2474d1</color>
@@ -6,3 +7,13 @@
     <color name="colorAccent">#D81B60</color>
     <color name="colorWhite">#FFFFFF</color>
 </resources>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2474d1</color>
+    <color name="colorPrimaryDark">#0064c1</color>
+    <color name="colorGray">#cccccc</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWhite">#FFFFFF</color>
+</resources>
+>>>>>>> 6bad6c40faf49e654987212f313aa28451ae13ab

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <paths xmlns:android="http://schemas.android.com/apk/res/android">
     <external-path
@@ -7,3 +8,14 @@
         name="external_storage_root"
         path="down/"/>
 </paths>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path
+        name="files_root"
+        path="Android/data/com.zzq.helloworld/"/>
+    <external-path
+        name="external_storage_root"
+        path="down/"/>
+</paths>
+>>>>>>> 6bad6c40faf49e654987212f313aa28451ae13ab

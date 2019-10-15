@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -18,4 +19,26 @@
         android:layout_gravity="center"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp" />
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/downloadItemImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/download_item_image_margin_v"
+        android:layout_marginBottom="@dimen/download_item_image_margin_v"
+        android:layout_marginStart="@dimen/download_item_image_margin_h"
+        android:layout_marginEnd="@dimen/download_item_image_margin_h" />
+
+    <TextView
+        android:id="@+id/fileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp" />
+>>>>>>> 6bad6c40faf49e654987212f313aa28451ae13ab
 </LinearLayout>

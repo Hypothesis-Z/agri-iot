@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
     <background android:drawable="@drawable/ic_account_background"/>
     <foreground android:drawable="@drawable/ic_account_foreground"/>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@drawable/ic_account_background"/>
+    <foreground android:drawable="@drawable/ic_account_foreground"/>
+>>>>>>> 6bad6c40faf49e654987212f313aa28451ae13ab
 </adaptive-icon>

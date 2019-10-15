@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -258,3 +259,265 @@
     </ScrollView>
 -->
 </android.support.constraint.ConstraintLayout>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:id="@+id/content">
+
+
+<!--
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/content_element_main"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/content_gap" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/content_text_wide"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:id="@+id/content_update_time2"
+                        android:layout_width="@dimen/content_text_wide"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/content_update_time"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/content_update_time_value2"
+                        android:layout_width="@dimen/content_text_wide"
+                        android:layout_height="wrap_content"
+                        android:text="@string/content_null"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/content_parameter2"
+                        android:layout_width="@dimen/content_text_wide"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/content_parameter"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/content_parameter_value2"
+                        android:layout_width="@dimen/content_text_wide"
+                        android:layout_height="wrap_content"
+                        android:text="@string/content_null"
+                        android:gravity="center"/>
+                </LinearLayout>
+                <com.dashboard.trc.DashboardView
+                    android:id="@+id/dashboardView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foregroundGravity="center"
+                    android:layout_gravity="center"
+                    app:textColor="@color/colorPrimary"
+                    app:arcColor="@color/colorPrimaryDark"
+                    app:realTimeValue="20"
+                    app:minValue="0"
+                    app:maxValue="100"
+                    app:bigSliceCount="10"
+                    app:headerRadius="20dp"
+                    app:headerTitle="km/h"
+                    app:measureTextSize="12sp"
+                    app:radius="100dp"
+                    app:startAngle="135"
+                    app:stripeMode="inner"
+                    app:stripeWidth="16dp"
+                    app:sweepAngle="270" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/content_gap" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGray">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/content_gap" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGray">
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/content_text_wide"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:id="@+id/content_update_time3"
+                        android:layout_width="@dimen/content_text_wide"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/content_update_time"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/content_update_time_value3"
+                        android:layout_width="@dimen/content_text_wide"
+                        android:layout_height="wrap_content"
+                        android:text="@string/content_null"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/content_parameter3"
+                        android:layout_width="@dimen/content_text_wide"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/content_parameter"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/content_parameter_value3"
+                        android:layout_width="@dimen/content_text_wide"
+                        android:layout_height="wrap_content"
+                        android:text="@string/content_null"
+                        android:gravity="center"/>
+                </LinearLayout>
+                <com.dashboard.trc.DashboardView
+                    android:id="@+id/dashboardView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foregroundGravity="center"
+                    android:layout_gravity="center"
+                    app:textColor="@color/colorPrimary"
+                    app:arcColor="@color/colorPrimaryDark"
+                    app:realTimeValue="20"
+                    app:minValue="0"
+                    app:maxValue="100"
+                    app:bigSliceCount="10"
+                    app:headerRadius="20dp"
+                    app:headerTitle="km/h"
+                    app:measureTextSize="12sp"
+                    app:radius="100dp"
+                    app:startAngle="135"
+                    app:stripeMode="inner"
+                    app:stripeWidth="16dp"
+                    app:sweepAngle="270" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGray">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/content_gap" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/content_gap" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/content_text_wide"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:id="@+id/content_update_time4"
+                        android:layout_width="@dimen/content_text_wide"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/content_update_time"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/content_update_time_value4"
+                        android:layout_width="@dimen/content_text_wide"
+                        android:layout_height="wrap_content"
+                        android:text="@string/content_null"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/content_parameter4"
+                        android:layout_width="@dimen/content_text_wide"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/content_parameter"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/content_parameter_value4"
+                        android:layout_width="@dimen/content_text_wide"
+                        android:layout_height="wrap_content"
+                        android:text="@string/content_null"
+                        android:gravity="center"/>
+                </LinearLayout>
+                <com.dashboard.trc.DashboardView
+                    android:id="@+id/dashboardView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foregroundGravity="center"
+                    android:layout_gravity="center"
+                    app:textColor="@color/colorPrimary"
+                    app:arcColor="@color/colorPrimaryDark"
+                    app:realTimeValue="20"
+                    app:minValue="0"
+                    app:maxValue="100"
+                    app:bigSliceCount="10"
+                    app:headerRadius="20dp"
+                    app:headerTitle="km/h"
+                    app:measureTextSize="12sp"
+                    app:radius="100dp"
+                    app:startAngle="135"
+                    app:stripeMode="inner"
+                    app:stripeWidth="16dp"
+                    app:sweepAngle="270" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/content_gap" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/content_layout">
+        </LinearLayout>
+    </ScrollView>
+-->
+</android.support.constraint.ConstraintLayout>
+>>>>>>> 6bad6c40faf49e654987212f313aa28451ae13ab

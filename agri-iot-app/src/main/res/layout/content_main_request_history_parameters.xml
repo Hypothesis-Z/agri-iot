@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -119,4 +120,127 @@
         </LinearLayout>
     </ScrollView>
 
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+            <LinearLayout
+                android:id="@+id/btn_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="@dimen/request_history_margin">
+                <Button
+                    android:id="@+id/btn_recent_hour"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recent_hour"
+                    android:background="@drawable/btn_request_history"
+                    android:textColor="@color/colorPrimary" />
+                <Button
+                    android:id="@+id/btn_recent_day"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="@string/recent_day"
+                    android:background="@drawable/btn_request_history"
+                    android:textColor="@color/colorPrimary" />
+                <Button
+                    android:id="@+id/btn_recent_week"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="@string/recent_week"
+                    android:background="@drawable/btn_request_history"
+                    android:textColor="@color/colorPrimary" />
+                <Button
+                    android:id="@+id/btn_custom"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:text="@string/custom"
+                    android:background="@drawable/btn_request_history"
+                    android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/calendar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="@dimen/request_history_margin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_layout"
+                app:layout_constraintBottom_toTopOf="@id/btn_query">
+                <EditText
+                    android:id="@+id/text_start_time"
+                    android:layout_width="@dimen/datetime_length"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start_time"
+                    android:textColor="@color/colorGray"
+                    android:inputType="datetime"
+                    android:gravity="center"
+                    android:focusable="false" />
+                <ImageButton
+                    android:id="@+id/imgBtn_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_date_range_black_24dp"
+                    android:enabled="false"
+                    tools:ignore="ContentDescription" />
+                <TextView
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:text="——"
+                    android:gravity="center"/>
+                <EditText
+                    android:id="@+id/text_end_time"
+                    android:layout_width="@dimen/datetime_length"
+                    android:layout_height="wrap_content"
+                    android:text="@string/end_time"
+                    android:textColor="@color/colorGray"
+                    android:inputType="datetime"
+                    android:gravity="center"
+                    android:focusable="false"/>
+                <ImageButton
+                    android:id="@+id/imgBtn_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_date_range_black_24dp"
+                    android:enabled="false"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_query"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/query"
+                android:layout_margin="@dimen/request_history_margin"
+                android:background="@drawable/btn_request_history_query"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/calendar_layout"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </LinearLayout>
+    </ScrollView>
+
+>>>>>>> 6bad6c40faf49e654987212f313aa28451ae13ab
 </android.support.constraint.ConstraintLayout>

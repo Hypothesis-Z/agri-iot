@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -36,3 +37,43 @@
     </item>
 
 </menu>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_realTime"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/title_activity_main" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/title_activity_main_history" />
+        <item
+            android:id="@+id/nav_downloadList"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/title_activity_main_download_list" />
+        <item
+            android:id="@+id/nav_setup"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/title_activity_main_setup" />
+    </group>
+
+    <item android:title="@string/title_activity_main_account">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/title_activity_main_logout" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/title_activity_main_exit" />
+        </menu>
+    </item>
+
+</menu>
+>>>>>>> 6bad6c40faf49e654987212f313aa28451ae13ab

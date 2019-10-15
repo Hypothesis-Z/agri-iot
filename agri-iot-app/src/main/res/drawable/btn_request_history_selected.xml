@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
@@ -7,4 +8,15 @@
             <stroke android:width="2dp" android:color="@color/colorPrimary" />
         </shape>
     </item>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/colorPrimary" />
+            <corners android:radius="10dp" />
+            <stroke android:width="2dp" android:color="@color/colorPrimary" />
+        </shape>
+    </item>
+>>>>>>> 6bad6c40faf49e654987212f313aa28451ae13ab
 </selector>

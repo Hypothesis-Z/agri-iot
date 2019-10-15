@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 include ':agri-iot-app'
+=======
+include ':agri-iot-app'
+>>>>>>> 6bad6c40faf49e654987212f313aa28451ae13ab
